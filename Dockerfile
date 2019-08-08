@@ -14,5 +14,5 @@ ENV NODE_ENV production
 RUN npm install node-gyp -g && \
     npm install iconv --save && \
     npm prune && \
-    npm cache clean \
+    npm cache clean --force && \
     rm -rf /tmp/*
